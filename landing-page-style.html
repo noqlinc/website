@@ -1,0 +1,1888 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+  <title>NoQL - Ultra Low Latency Made Simple</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  
+  <!-- Bootstrap Styles -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  
+  <!-- RS PLUGIN Styles -->
+  <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+  
+  <!-- http://www.456bereastreet.com/archive/201209/tell_css_that_javascript_is_available_asap/ -->
+  <script>
+    document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');
+  </script>
+  
+  <!-- Support for HTML5 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Enable media queries on older browsers -->
+  <!--[if lt IE 9]>
+    <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+        
+</head>
+<body>
+
+<div id="wrapper">
+	<div class="topbar">
+            <div class="container">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <p class="tagline">Call us : +1 203 791 3890 // Email us : ExecutiveOffice@NoQL.com</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <ul class="dm-social">
+                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" class="icon-facebook" title="Facebook">Facebook</a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" class="icon-google-plus" title="Google+">Google+</a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" class="icon-twitter" title="Twitter">Twitter</a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" class="icon-pinterest" title="Pinterest">Pinterest</a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" class="icon-linkedin" title="Linkedin">Linkedin</a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" class="icon-rss" title="Feedburner">RSS</a></li>
+                    </ul><!-- End Social --> 
+                </div>
+            </div>
+        </div><!-- /topbar -->
+        
+	<header class="header-wrapper">
+		<div class="container">
+            	<div class="col-lg-2 col-md-2 col-sm-2">
+                    <a class="cssLogo" href="index.html"><img src="images/NoQLLogoBig.gif" alt=""></a>
+                </div>
+            	<div class="col-lg-10 col-md-10 col-sm-12">
+                     <nav class="navbar navbar-default fhmm" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" data-toggle="collapse" data-target="#defaultmenu" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        </div><!-- end navbar-header -->
+                      
+                        </div><!-- end #navbar-collapse-1 -->
+					</nav><!-- end navbar navbar-default fhmm -->
+            	</div><!-- /col10 -->
+		</div><!-- /container -->
+    </header><!-- /header wrapper -->
+    
+    <section class="colon1">
+	<!--
+	#################################
+		- THEMEPUNCH BANNER -
+	#################################
+	-->
+	<div class="tp-banner-container">
+		<div class="tp-banner" >
+			<ul>
+            <!-- SLIDE  -->
+				<li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+					<!-- MAIN IMAGE -->
+					<!-- LAYERS -->
+					<img src="demos/01_slider.png"   alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+
+					<!-- LAYER NR. 1 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="left" data-hoffset="40"
+						data-y="100"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="800"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">INTUITIVE DEVELOPMENT
+					</div>
+
+
+					<!-- LAYER NR. 2 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="left" data-hoffset="40"
+						data-y="140"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="1000"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">PUSH BUTTON DEPLOYMENT
+					</div>
+
+					<!-- LAYER NR. 3 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="left" data-hoffset="40"
+						data-y="180"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="1200"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">COLOCATION IN MAJOR FINANCIAL DATA CENTERS
+					</div>
+
+					<!-- LAYER NR. 4 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="left" data-hoffset="40"
+						data-y="220"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="1400"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">FULLY ELASTIC BILLING AND SCALING
+					</div>
+
+					<!-- LAYER NR. 5 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="left" data-hoffset="40"
+						data-y="260"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="1600"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">ULTRA LOW LATENCY
+					</div>
+
+					<!-- LAYER NR. 6 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="left" data-hoffset="40"
+						data-y="300"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="1800"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">CUSTOM SOLUTIONS
+					</div>
+
+					<!-- LAYER NR. 7 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="left" data-hoffset="40"
+						data-y="340"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="2000"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">3RD PARTY APP STORE
+					</div>
+
+					<!-- LAYER NR. 1 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="right" data-hoffset="-20"
+						data-y="100"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="2200"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">VISUAL PROGRAMMING
+					</div>
+
+
+					<!-- LAYER NR. 2 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="right" data-hoffset="-20"
+						data-y="140"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="2400"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">LIVE PRODUCTION PATCHING
+					</div>
+
+					<!-- LAYER NR. 3 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="right" data-hoffset="-20"
+						data-y="180"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="2600"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">ON DEMAND SCALABILITY
+					</div>
+
+					<!-- LAYER NR. 4 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="right" data-hoffset="-20"
+						data-y="220"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="2800"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">OPEN SOURCE FOR DEVELOPMENT
+					</div>
+
+					<!-- LAYER NR. 5 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="right" data-hoffset="-20"
+						data-y="260"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="3000"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">ENTERPRISE GRADE DEPLOYMENT
+					</div>
+
+					<!-- LAYER NR. 6 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="right" data-hoffset="-20"
+						data-y="300"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="3200"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">PROOF OF CONCEPT TO PRODUCTION ONE CLICK
+					</div>
+
+					<!-- LAYER NR. 7 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="right" data-hoffset="-20"
+						data-y="340"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="3400"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4"> DID WE SAY ULTRA LOW LATENCY?
+					</div>
+
+					<!-- LAYER NR. 8 -->
+					<div class="tp-caption skewfromrightshort customout"
+						data-x="225"
+						data-y="120"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="1000"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 9"><img src="demos/02_book.png" alt="">
+					</div>
+				</li>
+            <!-- SLIDE  -->
+				<li data-transition="boxslide" data-slotamount="7" data-masterspeed="1500" >
+					<!-- MAIN IMAGE -->
+					<!-- LAYERS -->
+					<img src="demos/03_slider.png" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+
+
+					<!-- LAYER NR. 6 -->
+					<div class="tp-caption medium_bg_red skewfromright customout"
+						data-x="right" data-hoffset="-20"
+						data-y="90"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="800"
+						data-start="1200"
+						data-easing="Power4.easeOut"
+						data-endspeed="300"
+						data-endeasing="Power1.easeIn"
+						data-captionhidden="on"
+						style="z-index: 7">Intuitive Visual Development 
+					</div>
+                    
+					<!-- LAYER NR. 4 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="right" data-hoffset="-20"
+						data-y="140"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="1000"
+						data-start="1400"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">Ultra Low Latency Execution
+					</div>
+
+					<!-- LAYER NR. 5 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="right" data-hoffset="-20"
+						data-y="180"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="1000"
+						data-start="1600"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">One-Click Deployment from Open Source to Production
+					</div>
+
+					<!-- LAYER NR. 6 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="right" data-hoffset="-20"
+						data-y="220"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="1000"
+						data-start="1800"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">3rd Party App Store Reduces Time to Market
+					</div>
+
+					<!-- LAYER NR. 7 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="right" data-hoffset="-20"
+						data-y="260"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="1000"
+						data-start="2000"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">Elastic, Scalable, Full Stack, Fully Managed
+					</div>
+
+					<!-- LAYER NR. 7 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="right" data-hoffset="-20"
+						data-y="300"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="1000"
+						data-start="2200"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">Seamless Deployment from Open Source to Enterprise Grade
+					</div>
+
+					<!-- LAYER NR. 7 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="right" data-hoffset="-20"
+						data-y="340"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="1000"
+						data-start="2400"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4">NoQL - Enabling Ultra Low Latency Innovation in the Financial Markets
+					</div>
+                                                 
+					<!-- LAYER NR. 2 -->
+					<div class="tp-caption customin customout"
+						data-x="left" data-hoffset="60"
+						data-y="bottom" data-voffset="-100"
+						data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="800"
+						data-start="600"
+						data-easing="Power4.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						style="z-index: 3"><img src="demos/07_book.png" alt="">
+					</div>
+                    
+					<!-- LAYER NR. 2 -->
+					<div class="tp-caption customin customout"
+						data-x="left" data-hoffset="205"
+						data-y="bottom" data-voffset="-30"
+						data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="800"
+						data-start="700"
+						data-easing="Power4.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						style="z-index: 3"><img src="demos/06_book.png" alt="">
+					</div>      
+
+				<!-- LAYER NR. 2 -->
+					<div class="tp-caption customin customout"
+						data-x="left" data-hoffset="355"
+						data-y="bottom" data-voffset="50"
+						data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="800"
+						data-start="900"
+						data-easing="Power4.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						style="z-index: 3"><img src="demos/05_book.png" alt="">
+					</div>  
+				</li>	
+			<!-- SLIDE  -->
+				<li data-transition="boxslide" data-slotamount="7" data-masterspeed="1500" >
+					<!-- MAIN IMAGE -->
+					<!-- LAYERS -->
+					<img src="demos/02_slider.png" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+
+					<!-- LAYER NR. 1 -->
+					<div class="tp-caption lightgrey_divider skewfromrightshort customout"
+						data-x="85"
+						data-y="224"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="1200"
+						data-easing="Power4.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 2">
+					</div>
+
+					<!-- LAYER NR. 3 -->
+<!-- 					<div class="tp-caption large_bold_grey skewfromrightshort customout"
+						data-x="78"
+						data-y="150"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="1000"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 4"><span>NoQL</span>
+					</div> -->
+
+					<!-- LAYER NR. 7 -->
+<!-- 					<div class="tp-caption small_thin_grey customin customout"
+						data-x="80"
+						data-y="240"
+						data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="1500"
+						data-easing="Power4.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 8">NoQL brings ultra low latency, enterprise grade<br/> 
+                        website template for all your needs!
+					</div> -->
+
+					<!-- LAYER NR. 7 -->
+					<!-- LAYER NR. 5 -->
+					<div class="tp-caption medium_bg_asbestos skewfromleft customout"
+						data-x="80"
+						data-y="320"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="800"
+						data-start="4500"
+						data-easing="Power4.easeOut"
+						data-endspeed="300"
+						data-endeasing="Power1.easeIn"
+						data-captionhidden="on"
+						style="z-index: 6">Enabling Ultra Low Latency Innovation in the Financial Markets
+					</div>
+                    
+					<!-- LAYER NR. 8 -->
+<!-- 					<div class="tp-caption skewfromrightshort customout"
+						data-x="520"
+						data-y="170"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="2500"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 9"><img src="demos/01_book.png" alt="">
+					</div> -->
+
+					<!-- LAYER NR. 8 -->
+<!-- 					<div class="tp-caption skewfromrightshort customout"
+						data-x="480"
+						data-y="120"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="3000"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 9"><img src="demos/02_book.png" alt=""> -->
+					</div>
+
+				<!-- LAYER NR. 8 -->
+<!-- 					<div class="tp-caption skewfromrightshort customout"
+						data-x="980"
+						data-y="240"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="3500"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 9"><img src="demos/03_book.png" alt="">
+					</div> -->
+
+				<!-- LAYER NR. 8 -->
+<!-- 					<div class="tp-caption skewfromrightshort customout"
+						data-x="436"
+						data-y="190"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="500"
+						data-start="4000"
+						data-easing="Back.easeOut"
+						data-endspeed="500"
+						data-endeasing="Power4.easeIn"
+						data-captionhidden="on"
+						style="z-index: 9"><img src="demos/04_book.png" alt="">
+					</div> -->
+                    
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- END REVOLUTION SLIDER -->
+
+    </section>
+
+    <section class="colon3">
+     	<div class="container">
+        	<div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                <div class="box">
+                    <i class="icon-fire active"></i>
+                    <header>
+                        <h3>Ultra low latency & Massive Throughput</h3>
+                    </header>
+                    <p>Though the development is easy, the exection platform is hardcore. The intuitive drag and drop interface produces optimized code that runs on the switch its self, reducing latency greatly while greatly increasing throughput. By abstracting away entirely the fully managed enterprise stack, you can focus more on the logic that adds value to your business while NoQL worries about executing it near the bounds of the laws of physics.
+                <!--     <a class="readmore" href="#">read more</a> -->
+                </div>
+            </div>
+        	<div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                <div class="box">
+                    <i class="icon-signal"></i>
+                    <header>
+                        <h3>Elastic Instant Scalability</h3>
+                    </header>
+                    <p>You focus on developing your unique logic, let NoQL focus on the elastic scalability and extreme ultra low latency. Unlike competitors, NoQL scales your execution on demand, within microseconds. Horizontally distributing your workload seamlessly across our fully managed enterprise architecture. Sit back, relax, scale.</p>
+                    <!-- <a class="readmore" href="#">read more</a> -->
+                </div>
+            </div>
+        	<div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                <div class="box">
+                    <i class="icon-magic"></i>
+                    <header>
+                        <h3>So simple, almost Magic</h3>
+                    </header>
+                    <p>Before NoQL, simple and intuitive visual programming able to operate in millioniths of a second, and scale to billions of a messages a second instantly was only a dream. Instead, now it is magic. From building the most latency sensitive HFT algorithms, matching engines of the most demanding exchanges, NoQL's simple intuitive interface has no bounds.</p>
+                    <a class="readmore" href="#">read more</a>
+                </div>
+            </div>
+        	<div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                <div class="box">
+                    <i class="icon-cogs"></i>
+                    <header>
+                        <h3>Easy Setup for Beginners</h3>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit illo voluptas aperiam repudiandae impedit.</p>
+                    <a class="readmore" href="#">read more</a>
+                </div>
+            </div>
+		</div>
+        
+        <div class="divider"></div>
+        
+        <hr>
+        
+		<div class="container">
+            <div class="message text-center" data-effect="slide-bottom">
+            <h2>Here are {NEVER}MIND amazing features</h2>
+            <p>
+            Lorem ipsum
+            <a href="#">dolor sit amet</a>
+            , consectetur adipisicing elit. Suscipit illo voluptas aperiam repudiandae impedit quidem.
+            </p>
+           <div id="dm_slider" class="general">
+                <div class="dm_slider_main" data-effect="slide-bottom">
+                	<img class="img-responsive" src="demos/featured.png" alt="" />
+                </div>
+                
+            	<div class="dm_slider_item1" data-effect="slide-left">
+                	<img class="img-responsive feat-image" src="demos/01_featured.png" alt="" />
+                </div>
+                
+				<div class="dm_slider_item2" data-effect="slide-left">
+                		<img class="img-responsive feat-image" src="demos/02_featured.png" alt="" />
+                </div>
+            	
+                <div class="dm_slider_item3" data-effect="slide-left">
+                		<img class="img-responsive feat-image" src="demos/03_featured.png" alt="" />
+                </div>
+                
+				<div class="dm_slider_item4" data-effect="slide-right">
+            		<img class="img-responsive feat-image" src="demos/04_featured.png" alt="" />
+                </div>
+                
+				<div class="dm_slider_item5" data-effect="slide-right">
+            		<img class="img-responsive feat-image" src="demos/05_featured.png" alt="" />
+                </div>
+                
+				<div class="dm_slider_item6" data-effect="slide-right">
+            		<img class="img-responsive feat-image" src="demos/06_featured.png" alt="" />
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="divider"></div>
+    </section>
+
+    <section class="colon7">
+    	<div class="overlay">
+            <div class="container">
+                <div class="divider"></div>
+                <div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                    <div class="custom-box">
+                        <div class="icn-main-container">
+                            <p class="center"><span class="icn-container"><i class="icon-key"></i></span></p>
+                        </div> 
+                        <h3>Register an Account</h3>
+                        <p>Sorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit illo voluptas aperiam.</p>
+                        <a class="readmore" href="#">read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                    <div class="custom-box">
+                        <div class="icn-main-container">
+                            <p class="center"><span class="icn-container"><i class="icon-upload"></i></span></p>
+                        </div> 
+                        <h3>Upload Your Works</h3>
+                        <p>Sorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit illo voluptas aperiam.</p>
+                        <a class="readmore" href="#">read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                    <div class="custom-box">
+                        <div class="icn-main-container">
+                            <p class="center"><span class="icn-container active"><i class="icon-twitter"></i></span></p>
+                        </div> 
+                        <h3>Share with Friends</h3>
+                        <p>Sorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit illo voluptas aperiam.</p>
+                        <a class="readmore" href="#">read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                    <div class="custom-box">
+                        <div class="icn-main-container">
+                            <p class="center"><span class="icn-container"><i class="icon-dollar"></i></span></p>
+                        </div> 
+                        <h3>Make Money</h3>
+                        <p>Sorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit illo voluptas aperiam.</p>
+                        <a class="readmore" href="#">read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+        </div><!-- overlay -->
+    </section>
+    
+    <section class="colon10">
+    	<div class="container">
+        	<div class="divider"></div>
+        	<div class="col-lg-6 col-md-6 col-sm-6" data-effect="slide-bottom">
+				<a href="#">
+					<img width="600" src="demos/10_book.png" alt="">
+				</a>
+            </div>
+
+        	<div class="col-lg-6 col-md-6 col-sm-6" data-effect="slide-bottom">
+                <div class="about-widget">
+                    <header>
+                        <h3><i class="icon-android"></i> About Our Company</h3>
+                    </header>
+                    <p>Suscipit illo voluptas aperiam repudiandae impedit quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit illo voluptas aperiam repudiandae impedit quidem. Suscipit illo voluptas aperiam repudiandae impedit quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit illo voluptas aperiam repudiandae impedit quidem.</p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit illo voluptas aperiam repudiandae impedit quidem.</p>
+                    
+                    <a class="btn btn-primary" href="#">read more</a>
+                </div>
+            </div>
+		</div>
+        <div class="divider"></div>
+        <hr>
+    	<div class="container">
+        	<div class="divider"></div>
+        	<div class="col-lg-4 col-md-4 col-sm-4" data-effect="slide-bottom">
+                <div class="general-widget">
+                    <header>
+                        <h4> Our Awesome Skills</h4>
+                    </header>
+	
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-effect="slide-bottom" style="width: 40%">
+                            <span>WordPress - 40%</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-effect="slide-bottom" style="width: 100%">
+                            <span>Joomla - 100%</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-effect="slide-bottom" style="width: 75%">
+                            <span>HTML5 - 80%</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-effect="slide-bottom" style="width: 95%">
+                            <span>CSS3 - 95%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        	<div class="col-lg-4 col-md-4 col-sm-4" data-effect="slide-bottom">
+                <div class="general-widget">
+                    <header>
+                        <h4>Our Office</h4>
+                    </header>
+					<iframe class="google-map" src="http://maps.google.com/?ie=UTF8&amp;ll=40.748151,-73.985131&amp;spn=0.012355,0.021007&amp;t=m&amp;z=16&amp;output=embed"></iframe>
+				</div>
+            </div>
+            
+        	<div class="col-lg-4 col-md-4 col-sm-4" data-effect="slide-bottom">
+                <div class="general-widget">
+                    <header>
+                        <h4>Contact Details</h4>
+                    </header>
+                 	<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac.</p>
+                    <ul class="dm-social pull-left">
+                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" class="icon-facebook" title="Facebook">Facebook</a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" class="icon-google-plus" title="Google+">Google+</a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" class="icon-twitter" title="Twitter">Twitter</a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" class="icon-pinterest" title="Pinterest">Pinterest</a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" class="icon-linkedin" title="Linkedin">Linkedin</a></li>
+
+                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" class="icon-rss" title="Feedburner">RSS</a></li>
+                    </ul><!-- End Social --> 
+				</div>
+            </div>
+		</div>
+        <div class="divider"></div>
+    </section>
+
+    <section class="colon11">
+    	<div class="overlay">
+            <div class="container">
+                <div class="divider"></div>
+                <div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                    <div class="team-box">
+                        <div class="team-main-container">
+                            <p class="center"><span class="team-container"><img src="demos/01_team.png" alt=""></span></p> 
+                        </div> 
+                        <h3>William K. Bittner</h3>
+                        <span>Founder & CTO</span>
+                        <p>Will can't remember how many patents he has filed in the last 2 years, nor what day of the week it is, but luckily has his Anniversary tattoed on his arm. Met Griffin "Spaz" Lunn while trying to create a co-ed a Sorority the first week of college. Later that year, Will set off to New York to see, working at age 19 as a NYSE Equities Trader for co-founder Tad Haley & Mark Ghiker </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                    <div class="team-box">
+                        <div class="team-main-container">
+                            <p class="center"><span class="team-container"><img src="demos/02_team.png" alt=""></span></p>
+                        </div> 
+                        <h3>Andrew JOHNSEN</h3>
+                        <span>Social Manager</span>
+                        <p>Sorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit illo voluptas aperiam repudiandae.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                    <div class="team-box">
+                        <div class="team-main-container">
+                            <p class="center"><span class="team-container"><img src="demos/03_team.png" alt=""></span></p>
+                        </div> 
+                        <h3>Michael JACKNESS</h3>
+                        <span>Designer</span>
+                        <p>Sorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit illo voluptas aperiam repudiandae.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                    <div class="team-box">
+                        <div class="team-main-container">
+                            <p class="center"><span class="team-container"><img src="demos/04_team.png" alt=""></span></p>
+                        </div> 
+                        <h3>Bob DAYLON</h3>
+                        <span>Developer</span>
+                        <p>Sorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit illo voluptas aperiam repudiandae.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+        </div><!-- overlay -->
+    </section>
+
+    <section class="colon10">
+            <div class="message text-center">
+            	<h2>Let's see all example <span>portfolio</span> items below</h2>
+            	<p> Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipisicing elit. Suscipit illo voluptas aperiam repudiandae impedit quidem.</p>
+            </div>
+            
+		<article id="portfolio">
+			<div class="dm-portfolio">
+				<div class="container">
+					<nav class="portfolio-filter">
+						<ul>
+							<li><a href="#" class="btn btn-general" data-filter="*">All Works (32)</a></li>
+							<li><a href="#" class="btn btn-general" data-filter=".web-design">Web Design</a></li>
+							<li><a href="#" class="btn btn-general" data-filter=".development">Development</a></li>
+							<li><a href="#" class="btn btn-general" data-filter=".photoshop">Photoshop</a></li>
+							<li><a href="#" class="btn btn-general" data-filter=".video">Screens</a></li>
+						</ul>
+					</nav>
+				</div> <!--/container -->
+			</div> <!--/dm portfolio -->
+     
+			<div class="portfolio-container text-center">
+				<div class="portfolio">
+                    
+                        <div class="portfolio-item web-design development">
+                            <a href="single-portfolio-1.html">
+                                <img src="demos/01_demo.jpg" alt="">
+                                <div>
+                                <h5>Smart phones hanging</h5>
+                                <p><i class="icon-folder-open-alt"></i> Illustrator</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                            <div class="portfolio-item photoshop">
+                                <a href="single-portfolio-1.html">
+                                    <img src="demos/02_demo.jpg" alt="">
+                                <div>
+                                <h5>Working With Mobile Smart Phone</h5>
+                                <p><i class="icon-folder-open-alt"></i> Web Design</p>
+                                </div>
+                                </a>
+                            </div>
+                        
+                            <div class="portfolio-item development video">
+                                <a href="single-portfolio-1.html">
+                                    <img src="demos/03_demo.jpg" alt="">
+                                <div>
+                                <h5>Businessman at the workplace</h5>
+                                <p><i class="icon-folder-open-alt"></i> Web Development</p>
+                                </div>  
+                                </a>
+                            </div>
+                        
+                            <div class="portfolio-item web-design">
+                                <a href="single-portfolio-1.html">
+                                    <img src="demos/04_demo.jpg" alt="">
+                                <div>
+                                <h5>Business man working in an office</h5>
+                                <p><i class="icon-folder-open-alt"></i> Graphic Design</p>
+                                </div>
+                                </a>
+                            </div>
+    
+                            <div class="portfolio-item video">
+                                <a href="single-portfolio-1.html">
+                                    <img src="demos/05_demo.jpg" alt="">
+                                <div>
+                                <h5>Businessman working with documents</h5>
+                                <p><i class="icon-folder-open-alt"></i> Icons</p>
+                                </div>
+                                </a>
+                            </div>
+                        
+                            <div class="portfolio-item video photoshop">
+                                <a href="single-portfolio-1.html">
+                                    <img src="demos/06_demo.jpg" alt="">
+                                <div>
+                                <h5>Businessman writing empty diagram</h5>
+                                <p><i class="icon-folder-open-alt"></i> Videos</p>
+                                </div>
+                                </a>
+                            </div>
+                        
+                            <div class="portfolio-item web-design">
+                                <a href="single-portfolio-1.html">
+                                    <img src="demos/07_demo.jpg" alt="">
+                                <div>
+                                <h5>Futuristic Communication Concept</h5>
+                                <p><i class="icon-folder-open-alt"></i> Screens</p>
+                                </div>
+                                </a>
+                            </div>
+                        
+                            <div class="portfolio-item development">
+                                <a href="single-portfolio-1.html">
+                                    <img src="demos/08_demo.jpg" alt="">
+                                <div>
+                                <h5>Businesswoman pressing tech type</h5>
+                                <p><i class="icon-folder-open-alt"></i> Photoshop</p>
+                                </div>
+                                </a>
+                            </div>
+                        
+                            <div class="portfolio-item web-design video">
+                                <a href="single-portfolio-1.html">
+                                    <img src="demos/09_demo.jpg" alt="">
+                                <div>
+                                <h5>Planning a now home</h5>
+                                <p><i class="icon-folder-open-alt"></i> Illustrator</p>
+                                </div>
+                                </a>
+                            </div>
+                        
+                            <div class="portfolio-item photoshop">
+                                <a href="single-portfolio-1.html">
+                                    <img src="demos/10_demo.jpg" alt="">
+                                <div>
+                                <h5>Businessman Touching Digital Tablet</h5>
+                                <p><i class="icon-folder-open-alt"></i> Web Design</p>
+                                </div>
+                                </a>
+                            </div>
+                        
+                            <div class="portfolio-item web-design video">
+                                <a href="single-portfolio-1.html">
+                                    <img src="demos/11_demo.jpg" alt="">
+                                <div>
+                                <h5>Way to success concept</h5>
+                                <p><i class="icon-folder-open-alt"></i> Icons</p>
+                                </div>
+                                </a>
+                            </div>
+                        
+                            <div class="portfolio-item photoshop">
+                                <a href="single-portfolio-1.html">
+                                    <img src="demos/12_demo.jpg" alt="">
+                                <div>
+                                <h5>Standard Portfolio Item</h5>
+                                <p><i class="icon-folder-open-alt"></i> Web Development</p>
+                                </div>
+                                </a>
+                            </div>
+                            
+                            <div class="portfolio-item photoshop">
+                                <a href="single-portfolio-1.html">
+                                    <img src="demos/13_demo.jpg" alt="">
+                                <div>
+                                <h5>Another Portfolio Item</h5>
+                                <p><i class="icon-folder-open-alt"></i> App Development</p>
+                                </div>
+                                </a>
+                            </div>
+
+                            <div class="portfolio-item photoshop">
+                                <a href="single-portfolio-1.html">
+                                    <img src="demos/14_demo.jpg" alt="">
+                                <div>
+                                <h5>Custom Portfolio Slider Item</h5>
+                                <p><i class="icon-folder-open-alt"></i> Web Icons</p>
+                                </div>
+                                </a>
+                            </div>
+
+                            <div class="portfolio-item photoshop">
+                                <a href="single-portfolio-1.html">
+                                    <img src="demos/15_demo.jpg" alt="">
+                                <div>
+                                <h5>5 Different Portfolio Styles</h5>
+                                <p><i class="icon-folder-open-alt"></i> Web</p>
+                                </div>
+                                </a>
+                            </div>
+                            
+                        </div> <!-- End Portfolio -->
+                        
+				</div> <!-- End Portfolio Container -->
+			</article> <!-- End Portfolio Section -->
+            
+            <div class="divider"></div>
+            
+            <div class="message text-center">
+            	<h2>Like my works? Get a quote today!</h2>
+            	<p> Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipisicing elit. Suscipit illo voluptas aperiam repudiandae impedit quidem.</p>
+            </div>
+            
+            <div class="container">
+                    <form id="#" action="#">
+                    	<div class="col-sm-6 col-lg-6 col-md-6">
+                        <input type="text" class="form-control" placeholder="Name">
+                        <br>
+                        <input type="text" class="form-control" placeholder="Last Name">
+                        <br>
+						<textarea class="form-control" placeholder="Your Email" rows="3"></textarea>
+                        </div>
+                        
+                    	<div class="col-sm-6 col-lg-6 col-md-6">
+                        
+                        <input type="text" class="form-control" placeholder="Your Phone">
+                        <br>
+                        <input type="text" class="form-control" placeholder="Add Extra Notes">
+                        <br>
+						<button class="btn btn-primary"><i class="icon-envelope-alt"></i> Get a Quote</button>
+                        </div>
+                    </form>
+            </div>
+            
+        <div class="divider"></div>
+        <div class="divider"></div>
+    	</section>
+
+    <section class="colon5">
+    	<div class="container">
+			<div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+            	<div class="stat">
+                    <span class="stat-count">325</span>
+                    <p class="stat-detail">Ordered Coffe's</p>
+                </div>
+            </div>
+			<div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+            	<div class="stat">
+                    <span class="stat-count">652</span>
+                    <p class="stat-detail">Happy Customers</p>
+                </div>
+            </div>
+			<div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+            	<div class="stat">
+                    <span class="stat-count">245</span>
+                    <p class="stat-detail">Completed Projetcs</p>
+                </div>
+            </div>
+			<div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+            	<div class="stat">
+                    <span class="stat-count">425</span>
+                    <p class="stat-detail">Questions Answered</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="colon10">
+		<div class="container">
+            <div class="message text-center">
+            <h2>Let's see what is your awesome overviews below</h2>
+            <p>
+            Lorem ipsum
+            <a href="#">dolor sit amet</a>
+            , consectetur adipisicing elit. Suscipit illo voluptas aperiam repudiandae impedit quidem.
+            </p>
+            </div>
+       		<div class="col-lg-7 col-md-7 col-sm-12">
+            <div class="clearfix"></div>
+            	<div class="col-lg-5 col-md-5 col-sm-5">
+            	<h2 class="general-title">
+					<span>Join us</span>
+				</h2>
+                   <form action="#" id="subscribe">
+                        <input type="text" class="form-control" placeholder="Name">
+                        <br>
+                        <input type="text" class="form-control" placeholder="Last Name">
+                        <br>
+                        <input type="text" class="form-control" placeholder="Email Address">
+                        <br>
+                        <a class="btn btn-primary">Subscribe</a> <a class="btn btn-primary">Unsubcribe</a>
+                    </form>
+                </div>
+
+            	<div class="col-lg-7 col-md-7 col-sm-7">
+            	<h2 class="general-title">
+					<span>Why Choose Us?</span>
+				</h2>
+					<ul class="check">
+						<li><a href="#">15+ homepage style (check features menu)</a></li>
+						<li><a href="#">Compatible any eCommerce solutions</a></li>
+						<li><a href="#">Limitless color combinations</a></li>
+						<li><a href="#">Limitless page templates (15+ custom pages)</a></li>
+						<li><a href="#">100% responsive layout design</a></li>
+						<li><a href="#">Awesome slideshows for your contents</a></li>
+						<li><a href="#">500+ Google fonts included (use very easy)</a></li>
+						<li><a href="#">700+ custom font icons included</a></li>
+					</ul>
+                </div>
+                 
+        	</div>
+            
+       		<div class="col-lg-5 col-md-5 col-sm-12">
+            <div class="clearfix"></div>
+            	<h2 class="general-title">
+					<span>Top Four Reasons to Buy This Template</span>
+				</h2>
+                <div class="accordion" id="accordion2">
+                  <div class="accordion-group" data-effect="slide-bottom">
+                    <div class="accordion-heading">
+                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                        <em class="icon-minus icon-fixed-width"></em>100% Responsive Layout Design
+                      </a>
+                    </div>
+                    <div id="collapseOne" class="accordion-body collapse in">
+                      <div class="accordion-inner">
+                      	<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-group" data-effect="slide-bottom">
+                    <div class="accordion-heading">
+                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                        <em class="icon-plus icon-fixed-width"></em>100+ Valid HTML5 Templates
+                      </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-body collapse">
+                      <div class="accordion-inner">
+                      	<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute...</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-group" data-effect="slide-bottom">
+                    <div class="accordion-heading">
+                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                        <em class="icon-plus icon-fixed-width"></em>One Template Million Skins
+                      </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-body collapse">
+                      <div class="accordion-inner">
+                      	<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-group" data-effect="slide-bottom">
+                    <div class="accordion-heading">
+                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+                        <em class="icon-plus icon-fixed-width"></em>Unlimited Color Combinations
+                      </a>
+                    </div>
+                    <div id="collapseFour" class="accordion-body collapse">
+                      <div class="accordion-inner">
+                      	<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- end accordion -->
+        	</div>
+        </div>
+        <div class="divider"></div>
+    </section>
+	
+    <section class="colon4">
+    	<div class="container">
+		<div class="message text-center" data-effect="slide-bottom">
+                <h2>{NEVER}MIND all in one responsive <span>HTML5</span> website template</h2>
+                <p>Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipisicing elit. Suscipit illo voluptas aperiam repudiandae impedit quidem.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="colon3">
+    	<div class="container">
+            <div class="message text-center" data-effect="slide-bottom">
+            	<h2>Let's see all example <span>Gallery</span> images below</h2>
+            	<p> Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipisicing elit. Suscipit illo voluptas aperiam repudiandae impedit quidem.</p>
+            </div>
+            
+                <div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                	<div class="gallery-box">                    
+                        <a href="demos/01_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery4" data-biggallerythumbnail="demos/01_demo.jpg">
+                            <img src="demos/01_demo.jpg" alt="">
+                        </a>
+                        
+                        <div class="gallery-box-hide">
+                            <a href="demos/02_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery4">
+                                <img src="demos/02_demo.jpg"/>
+                            </a>
+                            <a href="demos/03_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery4">
+                                <img src="demos/03_demo.jpg"/>
+                                </a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery4">
+                                <img src="demos/04_demo.jpg"/>
+							</a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery4">
+                                <img src="demos/05_demo.jpg"/>
+							</a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery4">
+                                <img src="demos/06_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery4">
+                                <img src="demos/07_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery4">
+                                <img src="demos/08_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery4">
+                                <img src="demos/09_demo.jpg"/>
+							</a>
+                        </div><!-- gallery-box-hide -->
+                        
+                        <div class="gallery-box-titles">
+                        	<h3>From Island</h3>
+                        </div><!-- gallery-box-titles -->
+                	</div>
+                </div>
+                
+                <div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                	<div class="gallery-box">                    
+                        <a href="demos/02_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery1" data-biggallerythumbnail="demos/01_demo.jpg">
+                            <img src="demos/02_demo.jpg" alt="">
+                        </a>
+                        
+                        <div class="gallery-box-hide">
+                            <a href="demos/02_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery1">
+                                <img src="demos/02_demo.jpg"/>
+                            </a>
+                            <a href="demos/03_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery1">
+                                <img src="demos/03_demo.jpg"/>
+                                </a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery1">
+                                <img src="demos/04_demo.jpg"/>
+							</a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery1">
+                                <img src="demos/05_demo.jpg"/>
+							</a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery1">
+                                <img src="demos/06_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery1">
+                                <img src="demos/07_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery1">
+                                <img src="demos/08_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery1">
+                                <img src="demos/09_demo.jpg"/>
+							</a>
+                        </div>
+                        <div class="gallery-box-titles">
+                        	<h3>We are on Istanbul</h3>
+                        </div><!-- gallery-box-titles -->
+                	</div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                	<div class="gallery-box">                    
+                        <a href="demos/03_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery2" data-biggallerythumbnail="demos/01_demo.jpg">
+                            <img src="demos/03_demo.jpg" alt="">
+                        </a>
+                        
+                        <div class="gallery-box-hide">
+                            <a href="demos/02_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery2">
+                                <img src="demos/02_demo.jpg"/>
+                            </a>
+                            <a href="demos/03_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery2">
+                                <img src="demos/03_demo.jpg"/>
+                                </a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery2">
+                                <img src="demos/04_demo.jpg"/>
+							</a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery2">
+                                <img src="demos/05_demo.jpg"/>
+							</a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery2">
+                                <img src="demos/06_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery2">
+                                <img src="demos/07_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery2">
+                                <img src="demos/08_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery2">
+                                <img src="demos/09_demo.jpg"/>
+							</a>
+                        </div>
+                        <div class="gallery-box-titles">
+                        	<h3>Happy Holiday!</h3>
+                        </div><!-- gallery-box-titles -->
+                	</div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                	<div class="gallery-box">                    
+                        <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery3" data-biggallerythumbnail="demos/01_demo.jpg">
+                            <img src="demos/04_demo.jpg" alt="">
+                        </a>
+                        
+                        <div class="gallery-box-hide">
+                            <a href="demos/02_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery3">
+                                <img src="demos/02_demo.jpg"/>
+                            </a>
+                            <a href="demos/03_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery3">
+                                <img src="demos/03_demo.jpg"/>
+                                </a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery3">
+                                <img src="demos/04_demo.jpg"/>
+							</a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery3">
+                                <img src="demos/05_demo.jpg"/>
+							</a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery3">
+                                <img src="demos/06_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery3">
+                                <img src="demos/07_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery3">
+                                <img src="demos/08_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery3">
+                                <img src="demos/09_demo.jpg"/>
+							</a>
+                        </div>
+                        <div class="gallery-box-titles">
+                        	<h3>I love Amsterdam</h3>
+                        </div><!-- gallery-box-titles -->
+                	</div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                	<div class="gallery-box">                    
+                        <a href="demos/05_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery4" data-biggallerythumbnail="demos/01_demo.jpg">
+                            <img src="demos/05_demo.jpg" alt="">
+                        </a>
+                        
+                        <div class="gallery-box-hide">
+                            <a href="demos/02_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery4">
+                                <img src="demos/02_demo.jpg"/>
+                            </a>
+                            <a href="demos/03_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery4">
+                                <img src="demos/03_demo.jpg"/>
+                                </a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery4">
+                                <img src="demos/04_demo.jpg"/>
+							</a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery4">
+                                <img src="demos/05_demo.jpg"/>
+							</a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery4">
+                                <img src="demos/06_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery4">
+                                <img src="demos/07_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery4">
+                                <img src="demos/08_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery4">
+                                <img src="demos/09_demo.jpg"/>
+							</a>
+                        </div><!-- gallery-box-hide -->
+                        
+                        <div class="gallery-box-titles">
+                        	<h3>We are on England</h3>
+                        </div><!-- gallery-box-titles -->
+                	</div>
+                </div>
+                
+                <div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                	<div class="gallery-box">                    
+                        <a href="demos/06_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery1" data-biggallerythumbnail="demos/01_demo.jpg">
+                            <img src="demos/06_demo.jpg" alt="">
+                        </a>
+                        
+                        <div class="gallery-box-hide">
+                            <a href="demos/02_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery1">
+                                <img src="demos/02_demo.jpg"/>
+                            </a>
+                            <a href="demos/03_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery1">
+                                <img src="demos/03_demo.jpg"/>
+                                </a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery1">
+                                <img src="demos/04_demo.jpg"/>
+							</a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery1">
+                                <img src="demos/05_demo.jpg"/>
+							</a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery1">
+                                <img src="demos/06_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery1">
+                                <img src="demos/07_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery1">
+                                <img src="demos/08_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery1">
+                                <img src="demos/09_demo.jpg"/>
+							</a>
+                        </div>
+                        <div class="gallery-box-titles">
+                        	<h3>Welcome to Paris</h3>
+                        </div><!-- gallery-box-titles -->
+                	</div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                	<div class="gallery-box">                    
+                        <a href="demos/07_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery2" data-biggallerythumbnail="demos/01_demo.jpg">
+                            <img src="demos/07_demo.jpg" alt="">
+                        </a>
+                        
+                        <div class="gallery-box-hide">
+                            <a href="demos/02_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery2">
+                                <img src="demos/02_demo.jpg"/>
+                            </a>
+                            <a href="demos/03_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery2">
+                                <img src="demos/03_demo.jpg"/>
+                                </a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery2">
+                                <img src="demos/04_demo.jpg"/>
+							</a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery2">
+                                <img src="demos/05_demo.jpg"/>
+							</a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery2">
+                                <img src="demos/06_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery2">
+                                <img src="demos/07_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery2">
+                                <img src="demos/08_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery2">
+                                <img src="demos/09_demo.jpg"/>
+							</a>
+                        </div>
+                        <div class="gallery-box-titles">
+                        	<h3>Don't miss this Section</h3>
+                        </div><!-- gallery-box-titles -->
+                	</div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6" data-effect="slide-bottom">
+                	<div class="gallery-box">                    
+                        <a href="demos/08_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery3" data-biggallerythumbnail="demos/01_demo.jpg">
+                            <img src="demos/08_demo.jpg" alt="">
+                        </a>
+                        
+                        <div class="gallery-box-hide">
+                            <a href="demos/02_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery3">
+                                <img src="demos/02_demo.jpg"/>
+                            </a>
+                            <a href="demos/03_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery3">
+                                <img src="demos/03_demo.jpg"/>
+                                </a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery3">
+                                <img src="demos/04_demo.jpg"/>
+							</a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery3">
+                                <img src="demos/05_demo.jpg"/>
+							</a>
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery3">
+                                <img src="demos/06_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery3">
+                                <img src="demos/07_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery3">
+                                <img src="demos/08_demo.jpg"/>
+							</a>                            
+                            <a href="demos/04_demo.jpg" class="zoombox effect-icona" data-biggallery="gallery3">
+                                <img src="demos/09_demo.jpg"/>
+							</a>
+                        </div>
+                        <div class="gallery-box-titles">
+                        	<h3>Another Great Gallery</h3>
+                        </div><!-- gallery-box-titles -->
+                	</div>
+                </div>
+        </div>
+        <div class="divider"></div>
+	</section>
+
+ 
+    <section class="colon6">
+		<div class="container">
+        	<div class="col-lg-8 col-md-8 col-sm-8">
+                <div class="message">
+                    <h2>{NEVER}MIND responsive HTML5 website template</h2>
+                    <p>Suscipit illo voluptas aperiam repudiandae impedit quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit illo voluptas aperiam repudiandae impedit quidem.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <ul id="sub-ul" class="pull-right">
+                    <li><a class="btn btn-transparent" href="#"><i class="icon-gear"></i> View More Features</a></li>
+                    <li><a class="btn btn-transparent" href="#">Buy Now <i class="icon-long-arrow-right"></i></a></li>
+                </ul>
+            </div>
+		</div>
+	</section>
+      
+    <section class="colon3">
+    	<div class="container">
+        	<div class="col-lg-9 col-md-9 col-sm-12">
+            	<h2 class="general-title">
+					<span>Recent Posts</span>
+				</h2>
+            	<div class="recent-posts">
+        			<div class="col-lg-4 col-md-4 col-sm-4">
+                    	<div class="post-container">
+							<div class="image-container">
+                                <a href="single-with-sidebar.html" title="">
+                                    <img src="demos/08_demo.jpg" alt="">
+                                    <span class="zoom"></span>
+                                </a>
+                            </div>
+                                <a href="single-with-sidebar.html" title="">
+                                    <h3>Illustrations made for Best and M and M’s</h3>
+                                </a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit illo voluptas aperiam repudiandae impedit quidem.</p>
+								<a class="readmore" href="single-with-sidebar.html">read more</a>
+                        </div>
+                    </div>
+        			<div class="col-lg-4 col-md-4 col-sm-4">
+                    	<div class="post-container">
+							<div class="image-container">
+                                <a href="single-with-sidebar.html" title="">
+                                    <img src="demos/07_demo.jpg" alt="">
+                                    <span class="zoom"></span>
+                                </a>
+                            </div>
+                                <a href="single-with-sidebar.html" title="">
+                                    <h3>Pirates Design with Illustrator and Adobe PSD</h3>
+                                </a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit illo voluptas aperiam repudiandae impedit quidem.</p>
+								<a class="readmore" href="single-with-sidebar.html">read more</a>
+                        </div>
+                    </div>
+        			<div class="col-lg-4 col-md-4 col-sm-4">
+                    	<div class="post-container">
+							<div class="image-container">
+                                <a href="single-with-sidebar.html" title="">
+                                    <img src="demos/06_demo.jpg" alt="">
+                                    <span class="zoom"></span>
+                                </a>
+                            </div>
+                                <a href="single-with-sidebar.html" title="">
+                                    <h3>Custom Design Medicine Bag Photoshop</h3>
+                                </a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit illo voluptas aperiam repudiandae impedit quidem.</p>
+								<a class="readmore" href="single-with-sidebar.html">read more</a>
+                        </div>
+                    </div>
+                </div><!-- recent posts -->
+            </div>
+        	<div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="clearfix"></div>
+            	<h2 class="general-title">
+					<span>Happy Testimonials</span>
+				</h2>
+            	<div class="testimonials-slider">
+						<div id="myCarouselV" class="carousel thumbnail fade">
+                            <div class="carousel-inner">
+                                <div class="item active">
+									<div class="carousel-caption">
+                                    	<img class="img-thumbnail" src="demos/01_team.png" alt="">
+                                        <h4>John DOE</h4>
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies.</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+									<div class="carousel-caption">
+                                    	<img class="img-thumbnail" src="demos/02_team.png" alt="">
+                                        <h4>Bob STURT</h4>
+                    						<p>Suscipit illo voluptas aperiam repudiandae impedit quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit illo voluptas aperia.</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+									<div class="carousel-caption">
+                                    	<img class="img-thumbnail" src="demos/03_team.png" alt="">
+                                        <h4>Alex DESOUZA</h4>
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies.</p>
+                                    </div>
+                                </div>
+                            </div><!-- end carousel -->
+                            <a class="left carousel-control" href="#myCarouselV" data-slide="prev"><span class="icon-prev"></span></a>
+                            <a class="right carousel-control" href="#myCarouselV" data-slide="next"><span class="icon-next"></span></a>
+						</div><!-- myCarouselV -->       
+					</div><!-- testimonials-slider --> 
+            </div><!-- end col4 -->
+		</div>
+    </section>
+    
+    <section class="colon8">
+    	<div class="container">
+			<div class="col-lg-2 col-md-2 col-sm-2" data-effect="pop">
+            	<div class="client">
+                	<a data-toggle="tooltip" data-placement="top" title="The Nevermind HTML5 template is an awesome!" href="#">
+                 		<img src="demos/01_client.png" alt="">
+                    </a>
+                </div>
+            </div>
+			<div class="col-lg-2 col-md-2 col-sm-2" data-effect="pop">
+            	<div class="client">
+                	<a data-toggle="tooltip" data-placement="top" title="Thanks for all your helps! Always great jobs!" href="#">
+                 		<img src="demos/02_client.png" alt="">
+                    </a>
+                </div>
+            </div>
+			<div class="col-lg-2 col-md-2 col-sm-2" data-effect="pop">
+            	<div class="client">
+                	<a data-toggle="tooltip" data-placement="top" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the..." href="#">
+                 		<img src="demos/03_client.png" alt="">
+                    </a>
+                </div>
+            </div>
+			<div class="col-lg-2 col-md-2 col-sm-2" data-effect="pop">
+            	<div class="client">
+                	<a data-toggle="tooltip" data-placement="top" title="Lorem Ipsum has been the industry's standard dummy text ever since the..." href="#">
+                 		<img src="demos/04_client.png" alt="">
+                    </a>
+                </div>
+            </div>
+			<div class="col-lg-2 col-md-2 col-sm-2" data-effect="pop">
+            	<div class="client">
+                	<a data-toggle="tooltip" data-placement="top" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the..." href="#">
+                 		<img src="demos/05_client.png" alt="">
+                    </a>
+                </div>
+            </div>
+			<div class="col-lg-2 col-md-2 col-sm-2" data-effect="pop">
+            	<div class="client">
+                	<a data-toggle="tooltip" data-placement="top" title="Lorem Ipsum has been the industry's standard dummy text ever since the..." href="#">
+                 		<img src="demos/06_client.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<footer class="footer-wrapper">
+    	<div class="container">
+        	<div class="col-lg-3 col-md-3 col-sm-6">
+            	<div class="widget">
+					<h2 class="general-title">
+						<span>About {NEVER}MIND</span>
+					</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p> 
+                    <a class="btn btn-primary btn-sm" href="#">read more</a>
+				</div>
+            </div>
+        	<div class="col-lg-3 col-md-3 col-sm-6">
+            	<div class="widget">
+					<h2 class="general-title">
+						<span>Flickr Stream</span>
+					</h2>
+                    <ul class="flickr">
+                        <li><a href="#" title=""><img class="img-thumbnail img-rounded" src="demos/01_flickr.jpg" width="54" height="54" alt="" /></a></li>
+                        <li><a href="#" title=""><img class="img-thumbnail img-rounded" src="demos/02_flickr.jpg" width="54" height="54" alt="" /></a></li>
+                        <li><a href="#" title=""><img class="img-thumbnail img-rounded" src="demos/03_flickr.jpg" width="54" height="54" alt="" /></a></li>
+                        <li><a href="#" title=""><img class="img-thumbnail img-rounded" src="demos/04_flickr.jpg" width="54" height="54" alt="" /></a></li>
+                        <li><a href="#" title=""><img class="img-thumbnail img-rounded" src="demos/05_flickr.jpg" width="54" height="54" alt="" /></a></li>
+                        <li><a href="#" title=""><img class="img-thumbnail img-rounded" src="demos/06_flickr.jpg" width="54" height="54" alt="" /></a></li>
+                        <li><a href="#" title=""><img class="img-thumbnail img-rounded" src="demos/07_flickr.jpg" width="54" height="54" alt="" /></a></li>
+                        <li><a href="#" title=""><img class="img-thumbnail img-rounded" src="demos/08_flickr.jpg" width="54" height="54" alt="" /></a></li>
+                    </ul>
+				</div>
+            </div>
+        	<div class="col-lg-3 col-md-3 col-sm-6">
+            	<div class="widget">
+					<h2 class="general-title">
+						<span>Twitter Stream</span>
+					</h2>
+					<div class="tweets">
+						<ul>
+							<li>
+								<span class="content">
+									Looking a special HTML5 CSS3 template for your works? Visit here
+									<a href="http://goo.gl/eVrkdq">http://goo.gl/eVrkdq</a>
+								</span>
+							</li>
+						</ul>
+					</div>
+                        <a href="https://twitter.com/envato" class="twitter-follow-button" data-show-count="false">Follow @envato</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				  </div>
+            </div>
+        	<div class="col-lg-3 col-md-3 col-sm-6">
+            	<div class="widget">
+					<h2 class="general-title">
+						<span>Contact Details</span>
+					</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac.</p>
+                    	<ul class="contact-details">
+                      	<li><i class="icon-home"></i> Lorem ipsum dolar sit amet / USA</li>
+                        	<li><i class="icon-mobile-phone"></i> +0 554 777 78 78</li>
+                         <li><i class="icon-envelope-alt"></i> hello@designingmedia.com</li>
+                         <li><i class="icon-map-marker"></i> <a href="#" title="View large map on Google">Google Map</a></li>  
+                      </ul>
+				</div>
+            </div>
+		</div>
+	</footer>
+    
+	<div class="copyright-wrapper">
+    	<div class="container">
+        	<div class="col-lg-6 col-md-6 col-sm-6">
+            	<span class="copyright">
+                    © Copyright 2013 -
+                    <a href="#">{NEVER}MIND</a> HTML5 Template by 
+                    <a href="http://www.designingmedia.com">Designing Media</a>
+                </span>
+            </div>
+        	<div class="col-lg-6 col-md-6 col-sm-6">
+                <nav>
+                    <ul class="footer-menu">
+                  		<li><a href="#" title="#">Home</a></li>
+                  		<li><a href="#" title="#">About</a></li>
+                  		<li><a href="#" title="#">Portfolio</a></li>
+                  		<li><a href="#" title="#">Shop</a></li>
+                  		<li><a href="#" title="#">Forums</a></li>
+                  		<li><a href="#" title="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+		</div>
+	</div>
+<div class="dmtop">Scroll to Top</div>
+</div><!-- /wrapper -->
+
+	<!-- Main Scripts-->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/retina-1.1.0.js"></script>
+	<script src="js/jquery.unveilEffects.min.js"></script>
+	<script src="js/fhmm.js"></script>
+	<script src="js/jquery.isotope.min.js"></script>
+	<!-- RS PLUGIN Scripts-->
+	<script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+	<script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript">
+		var revapi;
+		jQuery(document).ready(function() {
+			   revapi = jQuery('.tp-banner').revolution(
+				{
+					delay:9000,
+					startwidth:1170,
+					startheight:450,
+					hideThumbs:10,
+					fullWidth:"on",
+					forceFullWidth:"on",
+					lazyload:"on",
+					navigationStyle:"none"
+				});
+		});
+	</script>
+ 
+ 	<script src="zoombox/zoombox.js"></script>
+	<script>
+        jQuery(document).ready(function($){
+            $(".zoombox").zoomBox();
+        });
+    </script>
+    
+	<script src="js/application.js"></script>
+
+	<script>
+		// Portfolio
+		(function($) {
+		"use strict";
+			var $container = $('.portfolio'),
+				$items = $container.find('.portfolio-item'),
+				portfolioLayout = 'fitRows';
+		
+			if( $container.hasClass('portfolio-centered') ) {
+				portfolioLayout = 'masonry';
+			}
+				
+			$container.isotope({
+				filter: '*',
+				animationEngine: 'best-available',
+				layoutMode: portfolioLayout,
+				animationOptions: {
+					duration: 750,
+					easing: 'linear',
+					queue: false
+				},
+				masonry: {
+					
+				}
+			}, refreshWaypoints());
+		
+			function refreshWaypoints() {
+				setTimeout(function() {
+				}, 1000);   
+			}
+		
+			$('nav.portfolio-filter ul a').on('click', function() {
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ filter: selector }, refreshWaypoints());
+				$('nav.portfolio-filter ul a').removeClass('active');
+				$(this).addClass('active');
+				return false;
+			});
+		
+			function getColumnNumber() { 
+				var winWidth = $(window).width(), 
+					columnNumber = 1;
+		
+				if (winWidth > 1200) {
+					columnNumber = 5;
+				} else if (winWidth > 950) {
+					columnNumber = 4;
+				} else if (winWidth > 600) {
+					columnNumber = 3;
+				} else if (winWidth > 400) {
+					columnNumber = 2;
+				} else if (winWidth > 250) {
+					columnNumber = 1;
+				}
+				
+				return columnNumber;
+			}       
+			
+			function setColumns() {
+				var winWidth = $(window).width(), 
+					columnNumber = getColumnNumber(), 
+					itemWidth = Math.floor(winWidth / columnNumber);
+				
+				$container.find('.portfolio-item').each(function() { 
+					$(this).css( { 
+						width : itemWidth + 'px' 
+					});
+				});
+			}
+		
+			function setPortfolio() { 
+				setColumns();
+				$container.isotope('reLayout');
+			}
+			
+			$container.imagesLoaded(function () { 
+				setPortfolio();
+			});
+		
+			$(window).on('resize', function () { 
+				setPortfolio();          
+			});
+		})(jQuery);
+    </script>
+
+  </body>
+</html>
