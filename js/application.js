@@ -17,7 +17,7 @@
 		$(document).on('click', '.fhmm .dropdown-menu', function(e) {
 		  e.stopPropagation()
 		})
-		  
+
 // Count Script
 	function count($this){
 		var current = parseInt($this.html(), 10);
@@ -60,16 +60,19 @@
 
 // Back to Top
  jQuery(window).scroll(function(){
-	if (jQuery(this).scrollTop() > 1) {
-			jQuery('.dmtop').css({bottom:"25px"});
+	if (jQuery(this).scrollTop() >= 0) {
+			// jQuery('.dmtop').css({bottom:"25px"});
+		
 		} else {
 			jQuery('.dmtop').css({bottom:"-100px"});
+
 		}
 	});
-	jQuery('.dmtop').click(function(){
-		jQuery('html, body').animate({scrollTop: '0px'}, 800);
-		return false;
-});
+// 	jQuery('.dmtop').click(function(){
+// 		jQuery('html, body').animate({scrollTop: '0px'}, 800);
+// 		return false;
+// });
+
 
 // Carousel Widgets
 	$('#myCarousel').carousel();
